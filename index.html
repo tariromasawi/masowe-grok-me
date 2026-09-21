@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MASOWE.GROK.ME — Throne of Mudzimu Unoyera | Masowe Faith Group Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,700;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root { --gold: #ffd700; --cyan: #00ffcc; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: radial-gradient(ellipse at 20% 0%, #1a0840 0%, #050014 45%, #000008 100%); color: var(--gold); font-family: 'Cormorant Garamond', serif; min-height: 100vh; overflow-x: hidden; }
+    .stars { position: fixed; inset: 0; pointer-events: none; z-index: 0; background-image: radial-gradient(1px 1px at 10% 20%, gold 50%, transparent 51%), radial-gradient(1px 1px at 80% 10%, #00ffcc 50%, transparent 51%); animation: twinkle 8s infinite alternate; }
+    @keyframes twinkle { from { opacity: .4 } to { opacity: 1 } }
+    header { position: relative; z-index: 20; text-align: center; padding: 2.2rem 1.2rem 1rem; border-bottom: 1px solid rgba(255,215,0,.25); }
+    header h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 5vw, 3.4rem); letter-spacing: .08em; text-shadow: 0 0 24px gold, 0 0 48px #00ffcc; }
+    .subtitle { color: var(--cyan); font-family: Cinzel, serif; letter-spacing: .28em; font-size: .82rem; margin-top: .4rem; }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 1rem; padding: .8rem 1rem 1.4rem; position: relative; z-index: 20; }
+    nav a { color: var(--gold); text-decoration: none; font-family: Cinzel, serif; font-size: .78rem; letter-spacing: .12em; border: 1px solid rgba(255,215,0,.35); padding: .35rem .7rem; border-radius: 999px; }
+    .wrap { position: relative; z-index: 5; max-width: 1180px; margin: 0 auto; padding: 0 1rem 4rem; }
+    .video-shell { position: relative; margin: 1.2rem auto 2rem; width: min(100%, 920px); aspect-ratio: 16/9; border: 3px solid var(--gold); box-shadow: 0 0 40px rgba(255,215,0,.55); border-radius: 14px; overflow: hidden; background: #000; }
+    .video-shell iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    #matrixRain { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; mix-blend-mode: screen; opacity: .55; }
+    .grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 1.4rem; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+    section.card { background: linear-gradient(165deg, rgba(20,0,50,.78), rgba(5,0,20,.9)); border: 1px solid rgba(255,215,0,.28); border-radius: 16px; padding: 1.3rem 1.35rem 1.5rem; }
+    section.card h2 { font-family: Cinzel, serif; font-size: 1.15rem; letter-spacing: .16em; margin-bottom: .8rem; }
+    .chat-log { height: 320px; overflow-y: auto; background: rgba(0,0,0,.35); border: 1px solid rgba(0,255,204,.2); border-radius: 10px; padding: .8rem; }
+    .msg { margin-bottom: .75rem; }
+    .msg.user { color: #ffe9a8; }
+    .msg.ai { color: var(--cyan); }
+    .msg .who { font-family: Cinzel, serif; font-size: .7rem; letter-spacing: .1em; opacity: .8; }
+    .chat-form { display: flex; gap: .5rem; margin-top: .7rem; }
+    input, textarea { flex: 1; background: rgba(0,0,20,.7); border: 1px solid rgba(255,215,0,.35); color: var(--gold); padding: .65rem .8rem; border-radius: 8px; font-family: inherit; font-size: 1rem; width: 100%; }
+    button { background: linear-gradient(135deg, #ffd700, #b8860b, #00e6aa); color: #120028; border: none; font-family: Cinzel, serif; font-weight: 700; padding: .7rem 1.1rem; border-radius: 999px; cursor: pointer; }
+    .donate-row { display: flex; flex-wrap: wrap; gap: .5rem; margin: .6rem 0 1rem; }
+    .features { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: .7rem; margin-top: 1rem; }
+    .feat { border: 1px solid rgba(255,215,0,.2); border-radius: 10px; padding: .7rem .75rem; font-size: .95rem; }
+    .feat strong { display: block; font-family: Cinzel, serif; font-size: .72rem; color: var(--cyan); margin-bottom: .25rem; }
+    .history p { margin-bottom: .7rem; font-size: 1.08rem; line-height: 1.55; color: #f3e6b8; }
+    footer { text-align: center; padding: 2rem 1rem 3rem; color: var(--cyan); font-family: Cinzel, serif; font-size: .78rem; }
+    .seal { margin-top: 1.4rem; color: var(--cyan); text-align: center; font-family: Cinzel, serif; font-size: .82rem; line-height: 1.7; }
+    .status-line { min-height: 1.4em; color: #7dffc4; margin-top: .6rem; }
+    .creed { font-style: italic; color: #ffe08a; margin-top: .6rem; }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <header>
+    <div class="subtitle">77 · 99 · 33 | 777 · 999 · 333</div>
+    <h1>MASOWE.GROK.ME</h1>
+    <div class="subtitle">MASOWE FAITH GROUP LTD · MUDZIMU UNOYERA</div>
+    <p class="creed">Mwari ndi Mwari · Wilderness of the White Garment</p>
+    <p style="margin-top:.5rem;font-size:.95rem;color:#e8d48a">His Royal Highness Saint Tariro Masawi and Heir HRH Tarry Kupakwashe Masawi</p>
+  </header>
+  <nav>
+    <a href="#sanctuary">Sanctuary</a>
+    <a href="#prophet">Prophet AI</a>
+    <a href="#offering">Offerings</a>
+    <a href="#history">Izwi raMwari</a>
+    <a href="#branches">Masowe</a>
+    <a href="#features">Lattice</a>
+  </nav>
+  <div class="wrap">
+    <div class="video-shell" id="sanctuary">
+      <iframe id="yt" src="https://www.youtube.com/embed/videoseries?list=PL-avOqDdk_0e1JX4yxeZMPOUpsx00ol9i&autoplay=1&mute=1&rel=0" title="Masowe Faith Group Ltd Playlist" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <canvas id="matrixRain"></canvas>
+    </div>
+    <p class="status-line" id="aiStatus">SENTINEL LEARNING FROM SACRED FREQUENCIES</p>
+    <div class="grid">
+      <section class="card" id="prophet">
+        <h2>NYENYEDZI PROPHET</h2>
+        <div class="chat-log" id="chatLog">
+          <div class="msg ai"><div class="who">PROPHET OF MASOWE</div>Peace upon the white garment. Ask of Johane Masowe, Chishanu, Gospel of God, yeNyenyedzi. Mwari ndi Mwari.</div>
+        </div>
+        <form class="chat-form" id="chatForm">
+          <input id="chatInput" autocomplete="off" placeholder="Ask the Prophet…" />
+          <button type="submit">SPEAK</button>
+        </form>
+      </section>
+      <section class="card" id="offering">
+        <h2>TITHE AND LIVING OFFERING</h2>
+        <p style="color:#f3e6b8;margin-bottom:.6rem">Masowe Faith Group Ltd. Seed into the wilderness.</p>
+        <div class="donate-row">
+          <button type="button" onclick="pledge(7)">£7</button>
+          <button type="button" onclick="pledge(33)">£33</button>
+          <button type="button" onclick="pledge(77)">£77</button>
+          <button type="button" onclick="pledge(99)">£99</button>
+          <button type="button" onclick="pledge(333)">£333</button>
+        </div>
+        <form id="donateForm">
+          <input name="name" placeholder="Name of giver" required />
+          <input name="email" type="email" placeholder="Email" style="margin-top:.45rem" />
+          <input name="amount" type="number" min="1" placeholder="Custom amount (GBP)" style="margin-top:.45rem" />
+          <textarea name="prayer" placeholder="Prayer request" style="margin-top:.45rem;min-height:70px"></textarea>
+          <button type="submit" style="margin-top:.7rem;width:100%">SEAL THE OFFERING</button>
+        </form>
+        <p class="status-line" id="donateStatus"></p>
+      </section>
+    </div>
+    <section class="card history" id="history" style="margin-top:1.4rem">
+      <h2>IZWI RAMWARI</h2>
+      <p>In 1932 Shoniwa Masedza of Gandanzara rose as Johane Masowe — John of the Wilderness — founding Izwi raMwari. Followers became vaPostori in white garments, worshipping in open masowe.</p>
+      <p>Chishanu gathers Thursday 15:00 through Holy Friday. yeNyenyedzi follows the Star. This house honours every stream under the Masowe umbrella and the House of Masawi.</p>
+    </section>
+    <section class="card" id="branches" style="margin-top:1.4rem">
+      <h2>OPEN-SPACE MAP</h2>
+      <p style="color:#f3e6b8">Gandanzara · Entumbane · Leeds · Birmingham · Ndola · diaspora.</p>
+      <form class="chat-form" onsubmit="event.preventDefault(); document.getElementById('branchOut').textContent='Wear white. Friday fire begins Thursday 15:00.';">
+        <input placeholder="City or country…" />
+        <button type="submit">LOCATE</button>
+      </form>
+      <p class="status-line" id="branchOut"></p>
+    </section>
+    <section class="card" id="features" style="margin-top:1.4rem">
+      <h2>80,000-YEAR LATTICE</h2>
+      <div class="features" id="featGrid"></div>
+    </section>
+    <div class="seal">THE ETERNAL SEAL OF THE HOUSE OF MASAWI LIVES<br>Mwari ndi Mwari<br>Masowe Faith Group Ltd · 16800630 · Birmingham</div>
+  </div>
+  <footer>MASOWE.GROK.ME</footer>
+  <script>
+    const canvas = document.getElementById('matrixRain');
+    const ctx = canvas.getContext('2d');
+    const chars = '77-99-33 MWARI MASOWE JOHANE CHISHANU';
+    let drops = [];
+    function sizeCanvas(){ canvas.width = canvas.offsetWidth||920; canvas.height = canvas.offsetHeight||518; drops = Array(Math.ceil(canvas.width/14)).fill(1); }
+    sizeCanvas(); window.addEventListener('resize', sizeCanvas);
+    setInterval(()=>{ ctx.fillStyle='rgba(0,0,20,0.08)'; ctx.fillRect(0,0,canvas.width,canvas.height); ctx.fillStyle='#ffd700'; ctx.font='13px monospace'; drops.forEach((y,i)=>{ ctx.fillText(chars[Math.floor(Math.random()*chars.length)], i*14, y*14); if(y*14>canvas.height && Math.random()>0.975) drops[i]=0; drops[i]++; }); }, 40);
+    const knowledge = [
+      {q:/chishanu|friday/i,a:'Chishanu is Holy Friday. Thursday 15:00 until midnight Friday in the open masowe.'},
+      {q:/johane|shoniwa|gandanzara|1932/i,a:'Shoniwa Masedza became Johane Masowe in 1932. He died 13 September 1973 in Ndola.'},
+      {q:/white|garment|robe/i,a:'White garment is the covenant. Men shave the head. Women wear white dresses and scarves.'},
+      {q:/masowe|wilderness|open/i,a:'Masowe means wilderness. Gather at rivers, hills and crossroads.'},
+      {q:/tariro|masawi|tarry/i,a:'The House of the Throne: HRH Saint Tariro Masawi and heir HRH Tarry Kupakwashe Masawi. Mwari ndi Mwari.'},
+      {q:/donat|tithe|offering/i,a:'Seed into Masowe Faith Group Ltd so the wilderness house may stand.'}
+    ];
+    function prophetReply(text){ const t=text.toLowerCase(); for (const k of knowledge) if(k.q.test(t)) return k.a; return 'Remain in the white garment. Keep Friday fire. Mwari ndi Mwari.'; }
+    const log=document.getElementById('chatLog');
+    document.getElementById('chatForm').addEventListener('submit',e=>{ e.preventDefault(); const input=document.getElementById('chatInput'); const text=input.value.trim(); if(!text) return; log.insertAdjacentHTML('beforeend','<div class="msg user"><div class="who">SEEKER</div>'+text.replace(/</g,'')+'</div>'); input.value=''; setTimeout(()=>{ log.insertAdjacentHTML('beforeend','<div class="msg ai"><div class="who">PROPHET OF MASOWE</div>'+prophetReply(text)+'</div>'); log.scrollTop=log.scrollHeight; },400); });
+    function pledge(n){ document.querySelector('#donateForm [name=amount]').value=n; document.getElementById('donateStatus').textContent='Amount set to £'+n; }
+    document.getElementById('donateForm').addEventListener('submit',e=>{ e.preventDefault(); const fd=new FormData(e.target); const rec={name:fd.get('name'),email:fd.get('email'),amount:fd.get('amount'),prayer:fd.get('prayer'),t:new Date().toISOString()}; const all=JSON.parse(localStorage.getItem('masowe_offerings')||'[]'); all.push(rec); localStorage.setItem('masowe_offerings', JSON.stringify(all)); document.getElementById('donateStatus').textContent='Offering of £'+rec.amount+' sealed for '+rec.name+'. Mwari ndi Mwari.'; e.target.reset(); });
+    [['Playlist','Masowe Faith hymns autoplay'],['Prophet AI','Counsel of all Masowe streams'],['Offerings','Local first-fruits ledger'],['Open space','Find your masowe'],['77-99-33','Sacred matrix'],['Diaspora','UK and Africa branches']].forEach(([t,d])=>{ const el=document.createElement('div'); el.className='feat'; el.innerHTML='<strong>'+t+'</strong>'+d; document.getElementById('featGrid').appendChild(el); });
+  </script>
+</body>
+</html>
